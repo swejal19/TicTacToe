@@ -59,7 +59,7 @@
         achievementsound.currentTime = 0;
         achievementsound.play();
         result.classList.remove("hide");
-        text.innerHTML=`Congratulations!! ${a} wins!`;
+        text.innerHTML=`Congratulations!! ${a} wins 🥳`;
         disable();
     }
 
