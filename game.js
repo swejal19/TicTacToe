@@ -8,6 +8,7 @@
     const achievementsound = new Audio("preview (2).mp3");
     const sadsound=new Audio("fail.wav");
 
+    let isWinner = false;
     let win=[[0,1,2],[0,3,6],[0,4,8],[1,4,7],[2,5,8],[2,4,6],[3,4,5],[6,7,8]];
     let content=true;
 
@@ -40,6 +41,7 @@
 
     //to check if there is no winner
     function drawcheck(){
+    if(isWinner) return;
     let draw=true;
     for (let b of boxes){
         if (b.innerHTML === "") {
@@ -56,6 +58,7 @@
     }
 
     const winner=(a)=>{
+        isWinner=true;
         achievementsound.currentTime = 0;
         achievementsound.play();
         result.classList.remove("hide");
@@ -84,6 +87,7 @@
         });
         content=true;
         result.classList.add("hide");
+        isWinner=false;
     }
 
     reset.addEventListener("click",()=>{
