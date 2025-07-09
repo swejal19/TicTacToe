@@ -51,7 +51,7 @@
     if(draw){
         sadsound.play();
         result.classList.remove("hide");
-        text.innerHTML=`Oops there is no winner 😥`;
+        text.innerHTML=`Oops, looks like there's no winner 😥`;
     } 
     }
 
