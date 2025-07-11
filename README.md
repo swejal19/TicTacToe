@@ -1,5 +1,9 @@
 # 🎮 Tic Tac Toe Game
 
+## Demo
+link:
+https://swejal19.github.io/TicTacToe/
+
 A fun and interactive Tic Tac Toe game built using **HTML, CSS, and JavaScript**, featuring:
 
 - 🎉 Sound effects on click and reset
